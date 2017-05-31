@@ -1,0 +1,14 @@
+{
+  "name": "daily-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sync": "browser-sync start --server --files '**/*'"
+  },
+  "author": "Joshua Barker",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.6"
+  }
+}
