@@ -2,7 +2,7 @@ import { check } from './module';
 import _ from 'lodash';
 
 // styles
-// import './sass/main.sass';
+import './sass/main.sass';
 
 console.log('App.js present.');
 console.log(check());

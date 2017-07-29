@@ -1,0 +1,30 @@
+// Import Reset
+@import 'partials/normalize';
+
+// Import Partials
+@import 'partials/variables';
+
+
+
+
+// Styles ---------------------------------------------- //
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: $white;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 5px;
+  font-kerning: normal;
+}
