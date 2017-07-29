@@ -22,13 +22,7 @@ body {
 header {
   background: rgb(83, 64, 143);
   color: rgb(154, 135, 213);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  border: 20px solid;
+  padding: 5em 7em;
 }
 
 header h1 {
@@ -36,19 +30,8 @@ header h1 {
 }
 
 header p {
-  font-size: .75em;
-  font-weight: 500;
+  font-weight: 300;
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: .15em;
-  margin-right: -.15em;
-}
-
-header .btn-default {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  font-size: .6em;
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
@@ -57,8 +40,7 @@ header .btn-default {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: garamond, serif;
-  text-transform: uppercase;
+  font-family: baskerville, serif;
   line-height: 1;
   margin: 0;
   color: rgb(38, 39, 51);
@@ -67,8 +49,6 @@ h4, h5, h6 {
 
 h1 {
   font-size: 5em;
-  letter-spacing: .5em;
-  margin-right: -.5em;
 }
 
 h2 {

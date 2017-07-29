@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sync": "browser-sync start --server --files '**/*'"
+    "start": "browser-sync start --server --files '**/*'"
   },
   "author": "Joshua Barker",
   "license": "MIT",
