@@ -1,7 +1,9 @@
-// make array of items
-// make list to place a random array item
-// display array of items
-// display generated list of random ordered items
+
+const items = [];
+const numOfListItems = items.length;
+const itemList = document.querySelector('.itemList');
+const availableItems = document.querySelector('.availableItems');
+const addItemInput = document.querySelector('.addItemInput');
 
 function extractRandomItem(array){
   let randNum = Math.floor(Math.random() * array.length);
@@ -9,11 +11,6 @@ function extractRandomItem(array){
   items.splice(randNum, 1);
   return theItem;
 }
-
-const items = ['one', 'two', 'three', 'four', 'five'];
-const numOfListItems = 5;
-const itemList = document.querySelector('.itemList');
-const availableItems = document.querySelector('.availableItems');
 
 function renderList(){
   availableItems.innerHTML = '';
@@ -24,16 +21,26 @@ function renderList(){
   });
 }
 
-for(i = 0; i < numOfListItems; i++){
-  let item = document.createElement('li');
-  let addBtn = document.createElement('button');
-  addBtn.innerText = 'add';
-  addBtn.onclick = function(){
-    item.innerText = extractRandomItem(items);
+const handlers = {
+  addItemToList: function(e, form) {
+    e.preventDefault();
+    let newItem = addItemInput.value;
+    items.push(newItem);
     renderList();
+    form.reset();
+    for(i = 0; i < numOfListItems; i++){
+      let item = document.createElement('li');
+      let addBtn = document.createElement('button');
+      addBtn.innerText = 'add';
+      addBtn.onclick = function(){
+        item.innerText = extractRandomItem(items);
+        renderList();
+      }
+      item.appendChild(addBtn);
+      itemList.appendChild(item);
+    }
+
   }
-  item.appendChild(addBtn);
-  itemList.appendChild(item);
 }
 
 renderList();
