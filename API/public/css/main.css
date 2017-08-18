@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif; }
+
+header {
+  height: 5em;
+  background: #3d195b; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.leagueLogo {
+  padding: 2.5em 0; }
+
+.leagueTable {
+  width: 70em;
+  border-collapse: collapse; }
+
+thead tr th {
+  padding: 1.25em;
+  font-weight: 600;
+  font-size: .75em;
+  color: #767676; }
+
+.header--club {
+  width: 35%; }
+
+tbody {
+  background: whitesmoke; }
+  tbody tr td {
+    padding: .75em 1.25em;
+    text-align: center;
+    border-bottom: 1px solid gainsboro; }
+
+.club p {
+  margin: 0;
+  display: flex;
+  align-items: center; }
+  .club p .crest {
+    width: 2.25em;
+    height: 2.25em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .club p .clubName {
+    padding-left: 1em; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
