@@ -5,17 +5,30 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: sans-serif; }
+  font-family: 'San Francisco',-apple-system,BlinkMacSystemFont,'.SFNSText-Regular',Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif; }
+
+a {
+  text-decoration: none; }
 
 header {
-  height: 5em;
-  background: #3d195b; }
+  padding: 1.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+nav a {
+  margin-left: 1em; }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 2.5em 0; }
 
 .leagueLogo {
   padding: 2.5em 0; }
@@ -24,11 +37,13 @@ main {
   width: 70em;
   border-collapse: collapse; }
 
-thead tr th {
-  padding: 1.25em;
-  font-weight: 600;
-  font-size: .75em;
-  color: #767676; }
+.leagueTableHeader {
+  opacity: 0; }
+  .leagueTableHeader tr th {
+    padding: 1.25em;
+    font-weight: 600;
+    font-size: .75em;
+    color: #767676; }
 
 .header--club {
   width: 35%; }

@@ -6,13 +6,16 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <header></header>
+  <header class="header">
+    <a href="#">thebrace</a>
+    <nav>
+      <a href="#" onclick="loadTable('445')">Premier League</a>
+      <a href="#" onclick="loadTable('452')">Bundesliga</a>
+    </nav>
+  </header>
   <main>
-    <div class="leagueLogo">
-      <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" height="125" alt="Premier League">
-    </div>
     <table class="leagueTable">
-      <thead>
+      <thead class="leagueTableHeader">
         <tr>
           <th>Position</th>
           <th class="text-left header--club">Club</th>
