@@ -1,6 +1,7 @@
 
-const items = [];
+const items = ['Josh', 'Shawn', 'Chris', 'Tim', 'Ryan', 'Mike', 'Jim', 'Keith', 'David', 'Adam'];
 const numOfListItems = items.length;
+
 const itemList = document.querySelector('.itemList');
 const availableItems = document.querySelector('.availableItems');
 const addItemInput = document.querySelector('.addItemInput');
@@ -21,26 +22,16 @@ function renderList(){
   });
 }
 
-const handlers = {
-  addItemToList: function(e, form) {
-    e.preventDefault();
-    let newItem = addItemInput.value;
-    items.push(newItem);
+for(i = 0; i < numOfListItems; i++){
+  let item = document.createElement('li');
+  let addBtn = document.createElement('button');
+  addBtn.innerText = `Pick ${i + 1}`;
+  addBtn.onclick = function(){
+    item.innerText = extractRandomItem(items);
     renderList();
-    form.reset();
-    for(i = 0; i < numOfListItems; i++){
-      let item = document.createElement('li');
-      let addBtn = document.createElement('button');
-      addBtn.innerText = 'add';
-      addBtn.onclick = function(){
-        item.innerText = extractRandomItem(items);
-        renderList();
-      }
-      item.appendChild(addBtn);
-      itemList.appendChild(item);
-    }
-
   }
+  item.appendChild(addBtn);
+  itemList.appendChild(item);
 }
 
 renderList();
