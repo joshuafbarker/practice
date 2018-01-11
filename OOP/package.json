@@ -1,0 +1,17 @@
+{
+  "name": "basic-static-server",
+  "version": "1.0.0",
+  "description": "basic static server for serving up a static website, built on node and express",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuafbarker/basic-static-server.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.15.2"
+  }
+}
