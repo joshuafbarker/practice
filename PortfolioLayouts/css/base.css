@@ -1,0 +1,39 @@
+:root {
+    --white: #fefefe;
+    --offWhite: #e4e4e4;
+    --darkGray: #121314;
+    --gray: #545352;
+    --lightGray: #c4c4c4;
+    --primary: tomato;
+    --secondary: coral;
+    --accent: cadetblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}

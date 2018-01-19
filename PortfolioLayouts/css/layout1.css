@@ -1,0 +1,37 @@
+@import 'base.css';
+
+body {
+    background: var(--darkGray);
+    font-size: 1.8rem;
+}
+
+header {
+    width: 100%;
+    padding: 3rem;
+    background: var(--white);
+    color: var(--darkGray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;    
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: var(--lightGray);
+}
