@@ -8,8 +8,8 @@ body {
 
 .wrapper {
     width: 60em;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
     position: relative;
 }
 
@@ -37,9 +37,32 @@ main {
 header {
     position: sticky;
     padding: 1rem;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     top: 1rem;
     width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav {
+    padding-left: 3rem;
+}
+
+nav a {
+    margin: 0 1rem;
+}
+
+.nav--background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #141517;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: translateY(-15rem);
+    transition: all 400ms ease-in-out;
 }
 
 section h1 {

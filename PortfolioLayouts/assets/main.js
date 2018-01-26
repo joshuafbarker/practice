@@ -1,18 +1,3 @@
-// window.onscroll = function() {
-
-//     const element = document.querySelector('.bg-cover');
-
-//     var elH = Math.max(element.height, document.scrollingElement.scrollHeight / 2);
-//     var winH = window.innerHeight;
-//     var scrollTop = document.scrollingElement.scrollTop;
-//     var scrollHeight = document.scrollingElement.scrollHeight - winH;
-//     var shiftTotal = elH - winH;
-//     var scrollPos = scrollTop / scrollHeight;
-    
-//     element.style.transform = 'translateY(-' + scrollPos * shiftTotal + 'px)';
-
-// }
-
 function goodParallax() {
     let speed, yPos;
     let top = window.pageYOffset;
@@ -25,4 +10,16 @@ function goodParallax() {
     });
 }
 
+function showNavBg() {
+    let top = window.pageYOffset;
+    const navBg = document.querySelector('.nav--background');
+    
+    if (top > 100) {
+        navBg.style.transform = `translateY(0)`;
+    } else {
+        navBg.style.transform = `translateY(-150px)`;
+    }
+}
+
 window.addEventListener('scroll', goodParallax);
+window.addEventListener('scroll', showNavBg);
