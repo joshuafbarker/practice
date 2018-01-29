@@ -3,7 +3,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.8rem;
-    background-color: #141517;
+    background-color: var(--darkGray);
 }
 
 .wrapper {
@@ -23,41 +23,44 @@ body {
     z-index: -1;
 }
 
-main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    z-index: 20;
-    color: var(--white);
-}
-
 header {
     position: sticky;
-    padding: 1rem;
+    padding: 1.5rem;
     /* background-color: var(--white); */
     top: 1rem;
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
 }
 
 nav {
+    display: flex;
+    align-items: center;
+}
+
+menu {
     padding-left: 3rem;
 }
 
-nav a {
+menu a {
     margin: 0 1rem;
+}
+
+.social {
+    /* color: var */
+    font-size: 2rem;
+}
+
+.social a {
+    margin-left: 1rem;
 }
 
 .nav--background {
     position: absolute;
     top: 0;
     left: 0;
-    background: #141517;
+    background: var(--darkGray);
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -65,15 +68,20 @@ nav a {
     transition: all 400ms ease-in-out;
 }
 
-section h1 {
-    font-size: 10rem;
+section {
+    padding: 15rem 0;
 }
 
-section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2.5rem;
+section h2 {
+    padding-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+section .container {
+    height: 50rem;
+    background-color: var(--darkGray);
+    padding: 1.5rem;
 }

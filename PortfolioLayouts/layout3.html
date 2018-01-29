@@ -5,43 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
     <link rel="stylesheet" href="./css/layout3.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Layout 3</title>
 </head>
 <body>
     <img class="bg-cover parallax" data-speed="25" src="./assets/woods.jpg" alt="The Woods" style="transform: translateY(0)">
-    <main>
-        <div class="wrapper">
-            <header>
+    <div class="wrapper">
+        <header>
+            <nav>
                 <img src="./assets/spade.png" alt="Joshua Barker" height="30">
-                <nav>
+                <menu>
                     <a href="#">About</a>
                     <a href="#">Work</a>
                     <a href="#">Mixes</a>
                     <a href="#">Blog</a>
-                </nav>
-                <div class="nav--background"></div>
-            </header>
+                </menu>
+            </nav>
+            <div class="social">
+                <a href="http://twitter.com/joshuafbarker">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="http://github.com/joshuafbarker">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="http://dribbble.com/joshuafbarker">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+            <div class="nav--background"></div>
+        </header>
+
+        <main>
+            <h1>
+                Husband.<br>
+                Father.<br>
+                Designer &amp; Developer.
+            </h1>
+
             <section>
-                <h1>Man of the Woods</h1>
+                <h2>Featured Work</h2>
+                <div class="container"></div>
             </section>
-            <section>
-                <p>From the Mountains</p>
-            </section>
-            <section>
-                <p>And beyond</p>
-            </section>
-            <section>
-                <p>And beyond</p>
-            </section>
-            <section>
-                <p>And beyond</p>
-            </section>
-            <section>
-                <p>And beyond</p>
-            </section>
-        </div>
-    </main>
+        </main>
+    </div>
     <script src="./assets/main.js"></script>
 </body>
 </html>
