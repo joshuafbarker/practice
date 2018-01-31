@@ -85,3 +85,10 @@ section .container {
     background-color: var(--darkGray);
     padding: 1.5rem;
 }
+
+.project-link {
+    border: 2px solid var(--white);
+    padding: 3rem;
+    display: block;
+    font-size: 3rem;
+}
