@@ -69,7 +69,7 @@ menu a {
 }
 
 section {
-    padding: 15rem 0;
+    padding: 15rem 0 5rem 0;
 }
 
 section h2 {
@@ -81,14 +81,36 @@ section h2 {
 }
 
 section .container {
-    height: 50rem;
-    background-color: var(--darkGray);
-    padding: 1.5rem;
+    /* background-color: var(--darkGray); */
+    /* padding: 1.5rem; */
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .project-link {
-    border: 2px solid var(--white);
+    border: 3px solid var(--primary);
+    color: var(--primary);
     padding: 3rem;
     display: block;
     font-size: 3rem;
+    transition: all 250ms ease-in-out;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    background: var(--primary);
+    color: var(--darkGray);
+}
+
+.project-link:hover span {
+    color: var(--mediumGray);
+}
+
+.project-link span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+    transition: all 250ms ease-in-out;
 }
